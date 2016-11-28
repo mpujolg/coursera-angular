@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="TestApp">
+
+<head>
+    <title>Factory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="angular.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Factory</h1>
+    <div class="container" ng-controller="ListCtrl1 as list1">
+        <h3>
+            List 1
+        </h3> Name: <input type="text" ng-model="list1.name"><br> Quantity: <input type="text" ng-model="list1.quantity"><br>
+        <button ng-click="list1.addItem()">Add Item</button>
+        <ul>
+            <li ng-repeat="item in list1.items">{{item.quantity}} of {{item.name}}</li>
+        </ul>
+    </div>
+    <div class="container" ng-controller="ListCtrl2 as list2">
+        <h3>
+            List 2
+        </h3> Name: <input type="text" ng-model="list2.name"><br> Quantity: <input type="text" ng-model="list2.quantity"><br>
+        <button ng-click="list2.addItem()">Add Item</button>
+        <ul>
+            <li ng-repeat="item in list2.items">{{item.quantity}} of {{item.name}}</li>
+        </ul>
+    </div>
+</body>
+
+</html>
