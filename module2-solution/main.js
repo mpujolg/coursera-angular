@@ -26,14 +26,20 @@
     function ShoppingListCheckOffService() {
         var listService = this,
             itemsToBuy = [{
-                name: "Delicious cookies",
+                name: "Cookies",
                 quantity: "10 bags"
             }, {
-                name: "Cookies",
-                quantity: "9 bags"
+                name: "AngularJS cup",
+                quantity: "1"
             }, {
-                name: "Cookies!",
-                quantity: "8 bags"
+                name: "Milk",
+                quantity: "2 bottles"
+            }, {
+                name: "Water",
+                quantity: "1 bottle"
+            }, {
+                name: "AngularJS knowledge",
+                quantity: "a lot"
             }],
             itemsBought = [];
         this.getItemstoBuy = function () {
