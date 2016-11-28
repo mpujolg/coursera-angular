@@ -8,6 +8,7 @@
 
     function ToBuyController(ShoppingListCheckOffService) {
         var toBuy = this;
+        toBuy.search = "";
         toBuy.items = ShoppingListCheckOffService.getItemstoBuy();
         toBuy.setBought = function (item, itemIndex) {
             ShoppingListCheckOffService.setBought(item, itemIndex);
@@ -18,6 +19,7 @@
 
     function AlreadyBoughtController(ShoppingListCheckOffService) {
         var bought = this;
+        bought.search = "";
         bought.items = ShoppingListCheckOffService.getItemsBought();
     };
 
